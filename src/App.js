@@ -84,6 +84,7 @@ handleDelete = (contactId) =>{
                 <div key={index}>
                   <img src={singleContact.pictureUrl} alt=''></img>
                    {singleContact.name}{(singleContact.popularity).toFixed(2)}
+                   <button onClick={this.handleDelete} >Delete</button>
                 </div>
               ) 
         }
